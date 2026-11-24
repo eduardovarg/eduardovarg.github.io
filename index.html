@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site pessoal de um estudante de Análise e Desenvolvimento de Sistemas.">
+    <title>Meu Portfólio Eduardo Vargas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="home">
+        <nav class="menu">
+            <a class="logo" href="#home">Meu Portfólio</a>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#contacts">Contato</a></li>
+            </ul>
+        </nav>
+
+        <div id="banner">
+            <div class="banner-conteudo">
+                <p class="destaque">OLÁ, SEJA BEM-VINDO(A)!</p>
+                <h1>Eu sou o Eduardo Vargas</h1>
+                <p>Estudante do 1º ano de Análise e Desenvolvimento de Sistemas (ADS).</p>
+                <p>Estou aprendendo a criar páginas para a internet e descobrindo o mundo da programação.</p>
+                <a class="botao" href="#about">Conheça mais sobre mim</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="secao">
+            <h2>Sobre mim</h2>
+            <p>
+               Me chamo Eduardo tenho 19 anos, moro em Brasilia a 5 anos, vim de Belo Horizonte pra Brasilia.
+            </p>
+            <p>
+                Neste momento, estou estudando HTML, CSS e JavaScript. Meu objetivo é
+                desenvolver minhas habilidades, praticar o que aprendo nas aulas e
+                criar meus primeiros projetos.
+            </p>
+            <p>Aprendo bastante rapido, resolvo problemas de formas variadas, e sou bastante criativo.</p>
+
+            <h3>O que estou aprendendo</h3>
+            <ul class="habilidades">
+                <li><strong>HTML:</strong> estrutura e conteúdo das páginas.</li>
+                <li><strong>CSS:</strong> cores, fontes e organização visual.</li>
+                <li><strong>JavaScript:</strong> interatividade básica.</li>
+            </ul>
+        </section>
+
+        <section id="hobbies" class="secao">
+            <h2>Meus hobbies</h2>
+            <p>
+                Além de estudar programação, também gosto de aproveitar o tempo livre.
+                Nesta galeria posso compartilhar fotos de algumas atividades que fazem parte da minha vida.
+            </p>
+
+            <div class="galeria-hobbies">
+                <figure class="hobby">
+                    <img src="images/img2.jpg" alt="Espaço para uma foto praticando esportes" loading="lazy">
+                    <figcaption>
+                        <h3>Musicas</h3>
+                        <p>Gosto de varios estilos de musicas. A musica faz parte do meu cotidiano sempre fico escutando.
+                            pode parecer que nao mas ela acaba me fazendo se consentra mais nas coisas que requer foco e atençao
+                        </p>
+                    </figcaption>
+                </figure>
+
+                <figure class="hobby">
+                    <img src="images/img1.jpg" alt="Espaço para uma foto de viagem ou passeio" loading="lazy">
+                    <figcaption>
+                        <h3>Escoteiro</h3>
+                        <p>Um grupo escoteiro onde eu me divirto bastante, onde eu aprendo a fazer pionerias e amarras, 
+                            e tambem acontece atividades como acampamento e  atividades escoteiras.
+                            Alem disso fazemos atividades voluntarias como ajudar uma creche com mantimentos, fazer abrigos pra animais entre varias atividades
+                        </p>
+                    </figcaption>
+                </figure>
+
+                <figure class="hobby">
+                    <img src="images/img3.jpg" alt="Espaço para uma foto relacionada a música" loading="lazy">
+                    <figcaption>
+                        <h3>Jogos</h3>
+                        <p>Meus passa tempo preferido gosto de jogar jogos eletronicos como fisicos como volei e basquete.
+                            as vezez conheço pessoas que gostam da mesmas coisas que eu o que tornar isso bastante divertido
+                        </p>
+                    </figcaption>
+                </figure>
+
+                <figure class="hobby">
+                    <img src="images/img4.jpeg" alt="Espaço para uma foto jogando videogame" loading="lazy">
+                    <figcaption>
+                        <h3>Academia</h3>
+                        <p>Sempre que possivel vou pra academia, onde posso tirar todo o estresse acumulado que juntei ao longo do dia</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section id="contacts" class="secao secao-clara">
+            <h2>Entre em contato</h2>
+            <p>Preencha o formulário abaixo. Por enquanto ele é apenas um exercício: as mensagens não são enviadas.</p>
+
+            <form id="form-contato">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem" required></textarea>
+
+                <button type="submit">Enviar</button>
+                <p id="resposta-formulario" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="ano">2026</span> Eduardo. Site criado para praticar HTML, CSS e JavaScript.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
